@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html lang="en">
+ 
+ <head>
+    
+<meta charset="UTF-8" />
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+<title>My Portfolio</title>
+    
+<link rel="stylesheet" href="styles.css" />
+    
+<link
+ rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+/>
+    
+<link
+ rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+integrity="sha512-ZZVx5ITRmBlc3/0yns4P7yFp+8T7Y3fM3tAMQiF1o57/7ElQ3dYDC88M51Uot8Mc0DbiJiE1TD1z0No2zzCzEw=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+    
+<link
+ rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-ZZVx5ITRmBlc3/0yns4P7yFp+8T7Y3fM3tAMQiF1o57/7ElQ3dYDC88M51Uot8Mc0DbiJiE1TD1z0No2zzCzEw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+<link
+ href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+rel="stylesheet"
+/>
+<style>
+
+body {
+  
+	font-family: 'Roboto', sans-serif;
+ 
+	 color: #333;
+  background: linear-gradient(135deg, #f3ec78, #dd65ab);
+  
+	margin: 0;
+  padding: 0;
+
+	}
+
+
+.container {
+ 
+	 max-width: 1200px;
+  margin: 0 auto;
+  
+	padding: 20px;
+  display: grid;
+  
+	grid-gap: 0px;
+	
+}
+
+
+header {
+  
+	background: rgba(255, 255, 255, 0.9);
+ 
+	 backdrop-filter: blur(10px);
+  
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  width: 100%;
+ 
+	 top: 0;
+  z-index: 1000;
+
+	}
+
+
+header nav ul {
+ 
+	 list-style: 
+	display: flex;
+  
+	justify-content: center;
+ 
+	 margin: 0;
+  
+	padding: 0;
+	
+}
+
+
+header nav ul li {
+  
+	margin: 0 15px;
+	
+}
+
+
+header nav ul li a {
+  
+	text-decoration: none;
+  
+	color: #333;
+  
+	font-weight: bold;
+  
+	transition: color 0.3s ease;
+	
+}
+
+
+header nav ul li a:hover {
+  
+	color: #af4261;
+
+	}
+
+
+.section {
+ 
+	 padding: 15px 5px;
+  
+	margin-top: 80px;
+  
+	background: rgba(255, 255, 255, 0.8);
+ 
+	 border-radius: 15px;
+  
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+	}
+
+
+.section h2 {
+  
+	font-size: 2.5rem;
+ 
+	 margin-bottom: 20px;
+  
+	color: #af4261;
+	
+}
+
+
+.section p {
+ 
+	 font-size: 1.2rem;
+  
+	line-height: 1.8;
+
+	}
+
+
+[data-aos] {
+  
+	opacity: 0;
+  
+	transition-property: transform, opacity;
+	
+}
+
+
+[data-aos]
+	.aos-animate {
+  
+	opacity: 1;
+	
+}
+
+
+[data-aos="fade-up"] {
+
+	  transform: translateY(50px);
+	
+}
+
+
+[data-aos="fade-up"]
+	.aos-animate {
+  
+	transform: translateY(0);
+
+}
+
+.card {
+ 
+	 background: rgba(255, 255, 255, 0.8);
+ 
+	 border-radius: 15px;
+  
+	padding: 20px;
+  
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+	margin-bottom: 20px;
+
+	}
+
+
+.profile-image {
+ 
+	 display: block;
+  
+	margin: 0 auto 15px auto;
+  
+	width: 150px; 
+  
+	height: auto;
+  
+	border-radius: 50%;
+ 
+	 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.view-project-button {
+  
+	display: inline-block;
+  
+	padding: 10px 20px;
+  
+	background-color: #af4261; 
+	color: #fff; 
+	text-decoration: none;
+ 
+	 border-radius: 5px;
+  
+	transition: background-color 0.3s ease, color 0.3s ease;
+  
+	margin-top: 10px;
+	
+}
+
+
+.view-project-button:hover {
+  
+	background-color: #ec37c5; 
+	color: #fff; 
+	}
+</style>
+
+
+  </head>
+  
+<body>
+    
+<header>
+      
+<nav>
+        
+<ul>
+          
+<li><a href="#home">Home</a></li>
+          
+<li><a href="#about">About</a></li>
+          
+<li><a href="#projects">Projects</a></li>
+          
+<li><a href="#skills">Skills</a></li>
+          
+<li><a href="#education">Education</a></li>
+          
+<li><a href="#contact">Contact</a></li>
+       
+ </ul>
+      
+</nav>
+   
+ </header>
+
+    
+<div class="container">
+      
+<section id="home" class="section" data-aos="fade-up">
+       
+        
+<img src="mansi.jpg" alt="Profile Image" class="profile-image" />
+ 
+      
+ <h1>mansi kalariya</h1>
+ 
+ <p>
+Creative and dedicated web developer focused on creating interactive
+ and visually appealing web experiences.</p>
+      
+</section>
+      
+<section id="about" class="section" data-aos="fade-up">
+        
+<h2>About Me</h2>
+        
+<p>
+I am a passionate Frontend developer with a strong focus on creating
+ stunning and user-friendly web experiences. Let's work together to
+          bring ur vision to life.
+        </p>
+      
+</section>
+      
+<section id="projects" class="section" data-aos="fade-up">
+        
+<h2>My Projects</h2>
+        
+
+   <p> photography management system</p> 
+<p> oat and milk ice-cream website</p>  
+
+<section id="skills" class="section" data-aos="fade-up">
+        
+<h2>Skills</h2>
+        
+<p>time management</p>
+       
+ <p>Front-End Development</p>
+        
+<p>html,css,js</p>
+        
+<p>bootstrap,PHP</p>
+        
+<p>Databases</p>
+      
+</section>
+      
+<section id="education" class="section" data-aos="fade-up">
+        
+<h2>Education</h2>
+        
+<p>Degree : BCA</p>
+        
+<p>University : VNSGU</p>
+         
+</section>
+         <!-- If needed then use it or else comment this section -->
+      
+<section id="contact" class="section" data-aos="fade-up">
+        
+<h2>Contact Me</h2>
+        
+<p>kalariyamansi2004@gmail.com</p>
+ 
+<p>conract no:9558163451</p>     
+</section>
+    
+</div>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+<script>
+      AOS.init();
+    
+</script>
+ 
+ </body>
+
+</html>
+
